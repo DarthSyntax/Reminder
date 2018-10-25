@@ -14,7 +14,7 @@ The relationships are not labeled.
 
 
 ## Design 2  
-![Adam's Design] (https://i.imgur.com/8ixwtlj.png)
+![Adam's Design](https://i.imgur.com/8ixwtlj.png)
 
 Adam
 ### Pros  
@@ -37,7 +37,7 @@ Location requirement not met.
 Relationships between classes are not named.  
 
 ## Design 4  
-![MamunNY's Design] (https://i.imgur.com/7BiZRcL.png)
+![MamunNY's Design](https://i.imgur.com/7BiZRcL.png)
 
 MamunNY
 ### Pros  
@@ -49,7 +49,7 @@ This design has the base `ReminderList`, `Reminder`, and `Alert` classes.
 This design includes classes involving user interface.  
 
 ## Design 5  
-![Stael's Design] (https://i.imgur.com/6V1LCo1.png)
+![Stael's Design](https://i.imgur.com/6V1LCo1.png)
 
 Stael
 ### Pros  
@@ -62,7 +62,7 @@ Relationships not labeled.
 
 
 ## Team Design  
-![Team Design] (https://i.imgur.com/oZPpQWe.png)
+![Team Design](https://i.imgur.com/oZPpQWe.png)
 We chose to use Design 1 as our final team design with each of the relationships between the classes labeled.  
 This design has a `User` class, a `RemindersList` class, a  `Reminder` class, and an `Alert` class.  
 These classes are the base classes of each of the other individual designs.  
