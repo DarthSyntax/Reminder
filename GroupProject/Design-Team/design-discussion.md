@@ -37,13 +37,13 @@ Location requirement not met.
 Relationships between classes are not named.  
 
 ## Design 4  
-![MamunNY's Design](https://i.imgur.com/7BiZRcL.png)
+![MamunNY's Design](https://i.imgur.com/7eRsdJy.png)
 
 MamunNY
 ### Pros  
 All requirements are met.  
 Relationships are labeled.  
-This design has the base `ReminderList`, `Reminder`, and `Alert` classes.  
+This design has the base `ReminderList`, `setReminder`, and `Alarm` classes.  
 
 ### Cons  
 This design includes classes involving user interface.  
