@@ -2,7 +2,8 @@
 ReminderManager: An App for Managing Reminders  
 (Deliverable 1 - Preliminary Work)  
 
-## Design 1  
+## Design 1
+![Loren's Design](https://i.imgur.com/vrxXy9L.png)  
 Loren
 ### Pros  
 This design is simple: there are just 4 classes and overall is not overcomplicated.  
@@ -13,6 +14,7 @@ The relationships are not labeled.
 
 
 ## Design 2  
+![Adam's Design] (https://i.imgur.com/8ixwtlj.png)
 Adam
 ### Pros  
 This design has the base `ReminderList`, `Reminder`, and `Alert` classes.  
@@ -24,6 +26,7 @@ The repeat requirement is not satisfied.
 Relationships between classes are not named.  
 
 ## Design 3  
+![Jonathan's Design](https://i.imgur.com/hpLKFjN.png)
 Jonathan
 ### Pros  
 This design has the base `User`, `List`, `Reminder item`, `Alerts` classes.
@@ -33,6 +36,7 @@ Location requirement not met.
 Relationships between classes are not named.  
 
 ## Design 4  
+![MamunNY's Design] (https://i.imgur.com/7BiZRcL.png)
 MamunNY
 ### Pros  
 All requirements are met.  
@@ -43,6 +47,7 @@ This design has the base `ReminderList`, `Reminder`, and `Alert` classes.
 This design includes classes involving user interface.  
 
 ## Design 5  
+![Stael's Design] (https://i.imgur.com/6V1LCo1.png)
 Stael
 ### Pros  
 All requirements are met, including the location requirement.  
@@ -54,6 +59,7 @@ Relationships not labeled.
 
 
 ## Team Design  
+![Team Design] (https://i.imgur.com/oZPpQWe.png)
 We chose to use Design 1 as our final team design with each of the relationships between the classes labeled.  
 This design has a `User` class, a `RemindersList` class, a  `Reminder` class, and an `Alert` class.  
 These classes are the base classes of each of the other individual designs.  
