@@ -14,7 +14,7 @@ The relationships are not labeled.
 
 
 ## Design 2  
-![Adam's Design](https://i.imgur.com/8ixwtlj.png)
+![Adam's Design](https://i.imgur.com/zG4gMi2.png)
 
 Adam
 ### Pros  
