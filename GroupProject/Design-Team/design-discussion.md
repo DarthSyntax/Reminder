@@ -15,6 +15,7 @@ The relationships are not labeled.
 
 ## Design 2  
 ![Adam's Design] (https://i.imgur.com/8ixwtlj.png)
+
 Adam
 ### Pros  
 This design has the base `ReminderList`, `Reminder`, and `Alert` classes.  
@@ -37,6 +38,7 @@ Relationships between classes are not named.
 
 ## Design 4  
 ![MamunNY's Design] (https://i.imgur.com/7BiZRcL.png)
+
 MamunNY
 ### Pros  
 All requirements are met.  
@@ -48,6 +50,7 @@ This design includes classes involving user interface.
 
 ## Design 5  
 ![Stael's Design] (https://i.imgur.com/6V1LCo1.png)
+
 Stael
 ### Pros  
 All requirements are met, including the location requirement.  
