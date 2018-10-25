@@ -46,7 +46,7 @@ Relationships are labeled.
 This design has the base `ReminderList`, `setReminder`, and `Alarm` classes.  
 
 ### Cons  
-This design includes classes involving user interface.  
+  
 
 ## Design 5  
 ![Stael's Design](https://i.imgur.com/6V1LCo1.png)
