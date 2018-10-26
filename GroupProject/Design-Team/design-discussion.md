@@ -18,7 +18,7 @@ The relationships are not labeled and the method/attributes could be types.
 
 Adam
 ### Pros  
-This design has a simple layout with base of `ReminderList`, `Reminder`, and `DateTime` classes.  
+This design has a simple layout with base of `ReminderList`, `Reminder`, `User`, and `DateTime` classes.  
 
 ### Cons   
 It's only got one alert method, should probably have its own alert class.
