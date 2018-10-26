@@ -7,10 +7,10 @@ ReminderManager: An App for Managing Reminders
 Loren
 ### Pros  
 This design is simple: there are just 4 classes and overall is not overcomplicated.  
-It also has specific methods to satsify the given requirements, including the location requirement.  
+It also has specific methods to satsify the given requirements, including the location and hieracrchy requirements.  
 
 ### Cons  
-The relationships are not labeled.
+The relationships are not labeled and the method/attributes could be types. 
 
 
 ## Design 2  
@@ -18,11 +18,11 @@ The relationships are not labeled.
 
 Adam
 ### Pros  
-This design has the base `ReminderList`, `Reminder`, and `Alert` classes.  
+This design has a simple layout with base of `ReminderList`, `Reminder`, and `DateTime` classes.  
 
-### Cons  
-This design includes classes involving user interface. (This is not needed at this stage of design).  
-Reminders cannot be grouped by type.  
+### Cons   
+It's only got one alert method, should probably have its own alert class.
+Perhaps the DateTime class should be embedded in the Reminder class. 
 The repeat requirement is not satisfied.  
 Relationships between classes are not named.  
 
@@ -66,8 +66,8 @@ Relationships not labeled.
 We chose to use Design 1 as our final team design with each of the relationships between the classes labeled.  
 This design has a `User` class, a `RemindersList` class, a  `Reminder` class, and an `Alert` class.  
 These classes are the base classes of each of the other individual designs.  
-The other individual designs include classes for setting up a user interface, but Design 1 does not include any classes involving a user interface.  
 This design is well thought out and is limited to just the 4 base classes.  
 The design also meets all of the given requirements.  
 
 ## Summary  
+The exercise gave the group a good understanding of how to read UML diagrams, but more importantly it gave us insight into how each person interpreted the application. In otherwords, going over each diagram put us on the same page and gave us a structural blueprint from which to begin building the application. Critiquing eachothers designs was also a great opportunity to learn and get to know eachother, and discuss eachothers strengths and weaknesses. 
