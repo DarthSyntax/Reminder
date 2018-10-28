@@ -33,7 +33,6 @@ Jonathan
 This design has the base `User`, `List`, `Reminder item`, `Alerts` classes.
 
 ### Cons  
-Location requirement not met.  
 Relationships between classes are not named.  
 
 ## Design 4  
