@@ -27,7 +27,7 @@ The repeat requirement is not satisfied.
 Relationships between classes are not named.  
 
 ## Design 3  
-![Jonathan's Design](https://imgur.com/a/5NVAHjY)
+![Jonathan's Design](https://imgur.com/a/5NVAHjY.png)
 Jonathan
 ### Pros  
 This design has the base `User`, `List`, `Reminder item`, `Alerts` classes.
