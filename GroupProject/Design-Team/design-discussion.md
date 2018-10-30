@@ -45,6 +45,7 @@ Relationships are labeled.
 This design has the base `ReminderList`, `setReminder`, and `Alarm` classes.  
 
 ### Cons  
+A little too complicated. Simple is better. 
   
 
 ## Design 5  
