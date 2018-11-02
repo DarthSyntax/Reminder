@@ -27,13 +27,12 @@ The repeat requirement is not satisfied.
 Relationships between classes are not named.  
 
 ## Design 3  
-![Jonathan's Design](https://i.imgur.com/hpLKFjN.png)
+![Jonathan's Design](https://i.imgur.com/WarAIHS.png)
 Jonathan
 ### Pros  
 This design has the base `User`, `List`, `Reminder item`, `Alerts` classes.
 
 ### Cons  
-Location requirement not met.  
 Relationships between classes are not named.  
 
 ## Design 4  
@@ -46,6 +45,7 @@ Relationships are labeled.
 This design has the base `ReminderList`, `setReminder`, and `Alarm` classes.  
 
 ### Cons  
+A little too complicated. Simple is better. 
   
 
 ## Design 5  
