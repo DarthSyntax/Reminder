@@ -35,7 +35,7 @@ The application will run on android using the latest API. The application is fun
 
 *This section should describe how the different components will be deployed on actual hardware devices. Similar to the previous subsection, this diagram may be unnecessary for simple systems; in these cases, simply state so and concisely state why.*
 
-![Deployment Diagram]()
+![Images/DeploymentDiagram.png]()
 
 ## 3 Low-Level Design
 
