@@ -10,15 +10,15 @@
 
 ### 1.1 Assumptions
 
-*The application will be built and tested on the latest Android API and functional across all mobile devices. The app will be thoroughly tested and be in beta internally before being approved to be deployed for download. 
+The application will be built and tested on the latest Android API and functional across all mobile devices. The app will be thoroughly tested and be in beta internally before being approved to be deployed for download. 
 
 ### 1.2 Constraints
 
-*As of now we do not have a running application since it is due in deliverable 3. The app's database will be run through MySQL.
+As of now we do not have a running application since it is due in deliverable 3. The app's database will be run through MySQL.
 
 ### 1.3 System Environment
 
-*The application will run on android using the latest API. The application is functional across screen sizes.
+The application will run on android using the latest API. The application is functional across screen sizes.
 
 ## 2 Architectural Design
 
