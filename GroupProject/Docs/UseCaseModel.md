@@ -1,7 +1,7 @@
 **Author**: Team 1
 
+![Use Case Diagram](https://i.imgur.com/W0j5ppy.png)
 
-Use Case Descriptions
 
 Requirement: User runs the app for the first time and sets his/her name.     
 Pre-conditions: None.       
