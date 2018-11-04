@@ -24,7 +24,7 @@ Requirement: User wants to delete a reminder.
 Pre-conditions: At least one reminder has been created and added to a list.      
 Post-conditions: Reminder object removed from a list,  size of the list decreased.      
 Scenario: User removes reminder -> removeReminder() called     
-          User checks off multiple reminders -> User deletes checked off reminders -> deleteReminder() called on a reminder if checkoff == true.
+Scenario 2: User checks off multiple reminders -> User deletes checked off reminders -> deleteReminder() called on a reminder if checkoff == true.
 
 Requirement: User wants to check off a reminder.       
 Pre-conditions: At least one reminder has been created and added to a list.      
