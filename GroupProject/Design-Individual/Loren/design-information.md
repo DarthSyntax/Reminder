@@ -8,11 +8,14 @@
     the list.  
     
     To realize this requirement, I created a `RemindersList` class with operations:  
+    
             * `addReminder(Reminder):void`  
             * `deleteReminder(Reminder):void`  
             * `editReminder(Reminder):void`,  
             * and attribute `listName:String`.  
+    
     I also created a `User` class with operations:  
+    
             * `addReminderList()` that allows the user to create a new reminder list.  
             * `deleteReminderList()` that allows the user to delete a reminder list.  
             * `editReminderList()` that allows the user to edit their reminder list by adding,  
@@ -40,8 +43,10 @@
     name of the actual reminder (e.g., Dentist Appointment).  
     
     In the `Reminder` class, I added attributes `type` and `name`.  
+    
             * `type` stores a String that states the reminder type.  
             * `name` stores a String that states the name of the actual reminder.  
+    
     In the `RemindersList` class, I added operation `hierarchy()` that will organize the  
     reminders in terms of their hierarchy (by type and name).  
     
@@ -103,10 +108,12 @@
     create, (re)name, select, and delete reminder lists.  
     
     In the `RemindersList` class, I added operations:  
+    
             * `create()` to allow users to create a new reminder list.  
             * `setName(listName)` to allow users to (re)name their reminder lists.  
             * `select()` to allow users to select a reminder list.  
             * `delete()` to allow users to delete a reminder list.  
+    
     `RemindersList` has an aggregate relationship with the `User` class, in which `User`  
     aggregates many `ReminderLists`.  
     
