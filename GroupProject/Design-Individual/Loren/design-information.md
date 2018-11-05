@@ -13,7 +13,6 @@
             * `deleteReminder(Reminder):void`  
             * `editReminder(Reminder):void`,  
             * and attribute `listName:String`.  
-    
     I also created a `User` class with operations:  
     
             * `addReminderList()` that allows the user to create a new reminder list.  
@@ -21,7 +20,6 @@
             * `editReminderList()` that allows the user to edit their reminder list by adding,  
             * deleting, or editing reminders (operations of the `RemindersList` class).  
             * With attribute `userName`.  
-  
     
     
 2. The application must contain a database (DB) of reminders and corresponding data.
@@ -46,7 +44,6 @@
     
             * `type` stores a String that states the reminder type.  
             * `name` stores a String that states the name of the actual reminder.  
-    
     In the `RemindersList` class, I added operation `hierarchy()` that will organize the  
     reminders in terms of their hierarchy (by type and name).  
     
@@ -113,7 +110,6 @@
             * `setName(listName)` to allow users to (re)name their reminder lists.  
             * `select()` to allow users to select a reminder list.  
             * `delete()` to allow users to delete a reminder list.  
-    
     `RemindersList` has an aggregate relationship with the `User` class, in which `User`  
     aggregates many `ReminderLists`.  
     
