@@ -20,11 +20,18 @@
 
 ### 1.4 Bug Tracking
 
-*Describe how bugs and enhancement requests will be tracked.*
+*Unit testing: Unit Tests will verify an atomic unit of source code, such as a method or a class. It returns expected results.
+Integrated testing: In this case we will implement UI Instrumentation tests, such as edit, delete, etc.
+System testing: In order to meet all requirements that a user wants; here we tested the system as a whole and the interaction between the components, software and hardware is checked. 
+*
 
 ### 1.5 Technology
 
-*Describe any testing technology you intend to use or build (e.g., JUnit, Selenium).*
+*JUnit(API) 
+or: Library Architecture testing framework;
+Data driven testng framework; 
+Module based testing framework; 
+Keyword driven testing framework;*
 
 ## 2 Test Cases
 
