@@ -1,7 +1,5 @@
 # Test Plan
 
-*This is the template for your test plan. The parts in italics are concise explanations of what should go in the corresponding sections and should not appear in the final document.*
-
 **Author**: Team 1
 
 ## 1 Testing Strategy
@@ -54,13 +52,13 @@ Keyword driven testing framework;*
 
 | Test Case                                    | Steps                                                                         | Purpose                                                                      | Expected Result                       | Actual Result | Pass/Fail |
 |----------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------|---------------|-----------|
-| Add reminder                                 | 1) Click Add 2) Enter data into fields  3) Click Submit                       | Make sure that reminders can be  properly added to lists                     | Reminder added to list                |               |           |
+| Add reminder                                 | 1) Click Add 2) Enter data into fields  3) Click Submit                       | Ensure that reminders can be  properly added to lists                        | Reminder added to list                |               |           |
 | Add empty reminder                           | 1) Click Add 2) Click Submit                                                  | Ensure that error message is shown if fields left empty                      | Display error message                 |               |           |
-| Delete reminder                              | 1) Click Delete 2) Select a reminder 3) Click Submit                          | Make sure reminders are properly deleted from lists                          | Reminder deleted from list            |               |           |
+| Delete reminder                              | 1) Click Delete 2) Select a reminder 3) Click Submit                          | Ensure that reminders are properly deleted from lists                        | Reminder deleted from list            |               |           |
 | Delete from empty list                       | 1) Click Delete                                                               | Ensure that error message is shown if there are no reminders to delete       | Display error message                 |               |           |
-| Delete checked off reminders                 | 1) Check off reminders 2) Click Delete                                        | Make sure that every reminder that was checked off gets deleted              | All checked reminders removed         |               |           |
-| Edit reminder                                | 1) Click Edit 2) Enter data into fields 3) Click Submit                       | Make sure that the reminder is updated with the proper data                  | Reminder updated with correct values  |               |           |
-| Add reminder list                            | 1) Click Add list 2) Enter list name 3) Click Submit                          | Make sure that the list is properly added with it's name                     | List added to menu                    |               |           |
+| Delete checked off reminders                 | 1) Check off reminders 2) Click Delete                                        | Ensure that every reminder that was checked off gets deleted                 | All checked reminders removed         |               |           |
+| Edit reminder                                | 1) Click Edit 2) Enter data into fields 3) Click Submit                       | Ensure that the reminder is updated with the proper data                     | Reminder updated with correct values  |               |           |
+| Add reminder list                            | 1) Click Add list 2) Enter list name 3) Click Submit                          | Ensure that the list is properly added with it's name                        | List added to menu                    |               |           |
 | Add reminder list with no name               | 1) Click Add list 2) Click Submit                                             | Ensure that error message is shown if no name is entered                     | Display error message                 |               |           |
 | Delete reminder list                         | 1) Click Delete list 2) Select a list 3) Click Submit                         | Ensure that the list was properly deleted                                    | List deleted from the menu            |               |           |
 | Create alert                                 | 1) Click Add 2) Enter data into fields 3) Enter date/time 4) Click Submit     | Ensure that an alert was added with date/time attributes defined             | Alert added to the list               |               |           |
