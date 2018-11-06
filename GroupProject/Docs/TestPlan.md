@@ -8,17 +8,17 @@
 
 ### 1.1 Overall strategy
 
-For unit testing we plan on testing how each individual method in our design works on it's own using J Unit in some cases. For example, testing that addLocation correctly defines the location attribute of the reminder object.
+*For unit testing we plan on testing how each individual method in our design works on it's own using J Unit in some cases. For example, testing that addLocation correctly defines the location attribute of the reminder object.*
 
-For integration we plan on testing how the individual methods interact together in order to satisfy a certain task. For example testing the requirement where a user wants to search for a reminder. If the search method does not return a match, testing if addReminder() is called properly, and then if that reminder and it's type is saved immediately in the DB and updated in the app.
+*For integration we plan on testing how the individual methods interact together in order to satisfy a certain task. For example testing the requirement where a user wants to search for a reminder. If the search method does not return a match, testing if addReminder() is called properly, and then if that reminder and it's type is saved immediately in the DB and updated in the app.*
   
-For system testing, black box testing will be used where the tester will not be aware of the internal design of the application. This person will attempt to use the app without any specifics of how it should be run. This will help detect and avoid any problems due to tasks needing situational scenarios in order to work.
+*For system testing, black box testing will be used where the tester will not be aware of the internal design of the application. This person will attempt to use the app without any specifics of how it should be run. This will help detect and avoid any problems due to tasks needing situational scenarios in order to work.*
   
-After any change is made in response to an error, all prior tests will be redone in order to make sure that none of the new changes have additional unexpected effects on how the system runs.
+*After any change is made in response to an error, all prior tests will be redone in order to make sure that none of the new changes have additional unexpected effects on how the system runs.*
 
 ### 1.2 Test Selection
 
-*Here you should discuss how you are going to select your test cases, that is, which black-box and/or white-box techniques you will use. If you plan to use different techniques at different testing levels (e.g., unit and system), you should clarify that.*
+*We plan on selecting our test cases on the basis of trying to examine the functionality of every implemented requirement. We also want to test all the negative cases and force the error messages for every single instance where they could be displayed. The white and black box testing techniques we will implement with this are error guessing, statement coverage, and branch coverage.*
 
 ### 1.3 Adequacy Criterion
 
