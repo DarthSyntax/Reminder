@@ -66,3 +66,5 @@ This activity allows the user to set up an alert for a new reminder or edit an a
 3. Design document: Descriptions of assumptions, constraints, the system's hardware and software, components, and deployment. Diagrams include a high-level design view (component diagram), a low-level design view (UML class diagram), and a graphical mockup of the user interface.  
 4. Project Plan: An introduction of the application with a description of each activity of the product. Also included is a description of the team roles.   
 5. Test Plan: A description of the testing strategy, method of selecting test cases, how the quality of the app will be assessed, how bugs and enhancement requests will be tracked, and the technology that will be used. Each test case will be outlined with its purpose, steps needed to be performed, and expected versus actual results.  
+
+![Team Roles](https://github.com/qc-se-fall2018/370Fall18Team1/blob/master/GroupProject/Images/TeamRoles.png)
