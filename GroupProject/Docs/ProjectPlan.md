@@ -8,9 +8,16 @@
 
 ## 2 Process Description
 
+`SetUserName`  
+This activity displays the initial screen of the app when the user opens the app for the first time. This screen asks the user for a username and once it has been set, takes the user to the `ShowReminderLists` screen where users can begin creating their reminders and reminder lists. Every other time that the app is opened, the `ShowReminderLists` screen will be the first screen shown.  
+**Entrance Criteria**: This is the initial screen of the app so there are no inputs necessary.  
+**Exit Criteria**: The username has been set and the user is then taken to the `ShowReminderLists` screen.  
+
+
 `ShowReminderLists`  
 This activity shows the default screen of the app; it shows all of the user's reminders organized by the user into lists. If the user hasn't created a reminder or a reminder list yet, then an empty, default list will be shown and the user will have the option to create reminders and reminder lists. All reminders and lists will be organized by reminder type and name, as specified by the user.  
-**Entrance Criteria**: This is the first screen of the app so there is no entrance criteria in this case. If the user returns to this screen after making some change (to a reminder or a list through creation, modification, or deletion) then this screen will reflect those changes (the changes are the entrance criteria).  
+**Entrance Criteria**: `SetUserName` -> `ShowReminderLists`. In the case that the user has opened the app for the first time and has set a name, the necessary input is this username.  
+This will be the first screen of the app otherwise (every time after the first time), so there is no entrance criteria in this case. If the user returns to this screen after making some change (to a reminder or a list through creation, modification, or deletion) then this screen will reflect those changes (the changes are the entrance criteria).  
 **Exit Criteria**: This screen will show all of the user's reminders in lists organized by type and name. The activity will have been completed successfully if any changes made to a reminder or list are displayed.  
 
 
@@ -40,7 +47,7 @@ This activity will confirm that the user intends to remove the reminders selecte
 
 `CreateAlert`  
 This activity allows the user to set up an alert for a new reminder or edit an alert for an existing reminder. The user can enter values for the date and time fields, as well as for the optional location field. The user can also specify if the alert should be repeated; if not, the alert will only be a one-time alert. If the user is creating a new alert, these fields will be empty. If the user is editing an existing alert, these fields will all be autofilled with previous inputs.  
-**Entrance Criteria**: `CreateReminder` -> `CreateAlert`. If the user is creating a new alert, no inputs are necessary. If the user is editing an alert, previous inputs for each field are needed.  
+**Entrance Criteria**: `CreateReminder` -> `CreateAlert`. If the user is creating a new alert, no inputs are necessary other than the information for the reminder that the alert will be created for. If the user is editing an alert, previous inputs for each field are needed.  
 **Exit Criteria**: The user has specified a valid date and time (location is optional) to set up or edit an alert so that the alert is successfully created or modified. The user will be taken to the `ShowReminderLists` screen, where the new reminder (or the edited reminder's changes) will be displayed.  
 
 
@@ -54,3 +61,8 @@ This activity allows the user to set up an alert for a new reminder or edit an a
 
 **Team members**: Jonathan Arenson, Stael Petit Blanc, Abdullah Mamun, Lorén Niu, Adam van Westrienen  
 **Roles**: 
+1. Use-case model: Create a use-case diagram with actors (the user) and use-cases for the application.  
+2. Supplementary requirements: A list of extra requirements that do not fit the use-case model.  
+3. Design document: Descriptions of assumptions, constraints, the system's hardware and software, components, and deployment. Diagrams include a high-level design view (component diagram), a low-level design view (UML class diagram), and a graphical mockup of the user interface.  
+4. Project Plan: An introduction of the application with a description of each activity of the product. Also included is a description of the team roles.   
+5. Test Plan: A description of the testing strategy, method of selecting test cases, how the quality of the app will be assessed, how bugs and enhancement requests will be tracked, and the technology that will be used. Each test case will be outlined with its purpose, steps needed to be performed, and expected versus actual results.  
