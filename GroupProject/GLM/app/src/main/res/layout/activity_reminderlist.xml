@@ -13,16 +13,27 @@
         android:layout_marginStart="4dp"
         android:text="Add List"
         app:layout_constraintStart_toEndOf="@+id/addReminderListName"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="addList"/>
 
-    <ListView
-        android:id="@+id/reminderListListView"
-        android:layout_width="368dp"
-        android:layout_height="447dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="7dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addReminderListName" />
+    <LinearLayout
+        android:id="@+id/listWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="49dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addReminderListButton">
+
+        <ListView
+            android:id="@+id/reminderListListView"
+            android:layout_width="368dp"
+            android:layout_height="447dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addReminderListName" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/addReminderListName"
