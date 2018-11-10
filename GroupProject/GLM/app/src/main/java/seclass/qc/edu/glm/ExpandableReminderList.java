@@ -16,6 +16,7 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
     private Context context;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHashMap;
+    public static int currentGroupPosition;
 
     public ExpandableReminderList(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap) {
         this.context = context;
@@ -36,6 +37,26 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
     @Override
     public Object getGroup(int i) {
         return listDataHeader.get(i);
+    }
+
+    public void setGroup(String title, List<String> list) {
+        listDataHeader.add(title);
+        listHashMap.put(title, list);
+
+    }
+
+    public void removeGroup(String key, int position) {
+        listDataHeader.remove(position);
+        listHashMap.remove(key);
+    }
+
+    public void setChild(String name, String listName) {
+        listHashMap.get(listName).add(name);
+
+    }
+
+    public void removeChild(String key, int listPosition, int remPosition) {
+        listHashMap.get(listDataHeader.get(listPosition)).remove(remPosition);
     }
 
     @Override
@@ -66,6 +87,8 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.list_group, null);
         }
         TextView lblListHeader = (TextView)convertView.findViewById(R.id.lblListHeader);
+        //convertView.setLongClickable(true);
+        //convertView.setId(RListActivity.count);
         lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);
         return convertView;

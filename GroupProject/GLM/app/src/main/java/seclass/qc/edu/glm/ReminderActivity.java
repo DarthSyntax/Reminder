@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ReminderActivity extends AppCompatActivity {
 
@@ -16,8 +17,9 @@ public class ReminderActivity extends AppCompatActivity {
     public static int minute;
     EditText getName;
     EditText getType;
-    String name;
-    String type;
+    String name = "";
+    String type = "";
+    Intent rListActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +43,23 @@ public class ReminderActivity extends AppCompatActivity {
         name = getName.getText().toString();
         getType = (EditText) findViewById(R.id.enterType);
         type = getType.getText().toString();
-        //Intent reminderListActivity = new Intent(this, activity_reminderlist.class);
-        //reminderActivity.putExtra("myReminder", new Gson().toJson(new Reminder(name, type)));
+        Reminder reminder = new Reminder(type, name);
+        rListActivity = new Intent(this, RListActivity.class);
+        rListActivity.putExtra("name", name);
+        rListActivity.putExtra("type", type);
 
         finish();
+    }
+
+    public void dateAndTime(View v) {
+        Toast.makeText(this, "Date and Time not implemented yet"  , Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void finish(){
+        setResult(1, rListActivity);
+        super.finish();
     }
 
 }

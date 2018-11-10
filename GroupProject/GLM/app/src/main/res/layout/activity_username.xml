@@ -27,25 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
 
-    <TextView
-        android:id="@+id/passwordLabel"
-        android:layout_width="159dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="16dp"
-        android:text="Password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userNameField" />
 
-    <EditText
-        android:id="@+id/passwordField"
-        android:layout_width="278dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLabel" />
 
     <Button
         android:id="@+id/userSubmit"
