@@ -9,9 +9,9 @@ public class Reminder {
     private boolean checkOff;
 
 
-    private Reminder() { }
+     Reminder() { }
 
-    private Reminder(String t, String n) {
+     Reminder(String t, String n) {
         type = t;
         name = n;
         checkOff = false;
