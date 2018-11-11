@@ -8,13 +8,17 @@ public class Reminder {
     private String name;
     private boolean checkOff;
 
+    private Alert alert;
 
-     Reminder() { }
 
-     Reminder(String t, String n) {
+    public Reminder() { }
+
+    public Reminder(String t, String n, String d, String tm) {
         type = t;
         name = n;
         checkOff = false;
+
+        alert = new Alert(d, tm);
     }
 
     public String getType() {
