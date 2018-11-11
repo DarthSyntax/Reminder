@@ -1,4 +1,4 @@
-## ​Design Information
+## Design Information
 
 **1.** **A list consisting of reminders the users want to be aware of. The application must allow users to add reminders to a list, delete reminders from a list, and edit the reminders in the list.**
 

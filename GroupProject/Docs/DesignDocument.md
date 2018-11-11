@@ -22,8 +22,6 @@ The application will run on Android using the latest API.
 
 ![Component Diagram](https://i.imgur.com/pIPTrA3.png)
 
-In the component diagram, the user starts by going through the ListsManager,  ReminderManager, & hierarchical interfaces. The ListManager in an implementaion of the ReminderManager class. ReminderManager will manage the ReminderList class. The User's ReminderList will pass the items and quantities onto the HierarchicalList class, which will check the database to see if the reminder or reminders exist. If they don't exist, then the reminder and reminder type will be placed into the database. The User will manage the lists created within the ListManager class.
-
 
 ### 2.2 Deployment Diagram
 
