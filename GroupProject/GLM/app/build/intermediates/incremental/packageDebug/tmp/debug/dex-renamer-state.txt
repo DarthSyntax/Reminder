@@ -1,0 +1,7 @@
+#Sun Nov 11 16:08:53 EST 2018
+base.0=/Users/lorentiffanyniu/Desktop/CS370/370Fall18Team1/GroupProject/GLM/app/build/intermediates/transforms/dexMerger/debug/1
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/lorentiffanyniu/Desktop/CS370/370Fall18Team1/GroupProject/GLM/app/build/intermediates/transforms/dexMerger/debug/0
