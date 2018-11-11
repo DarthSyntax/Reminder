@@ -49,5 +49,3 @@ The setDate() and setTime() method in alarm class will complete the task. Method
 I added class Location so that setting reminders based on location can be possible by searching location or using map or users can have their location turned off. I created method accessMap(), searchLoc() to get locations. Users can access this from setReminder class as well.
 
 **13.** **The User Interface (UI) must be intuitive and responsive.**
-
-Not considered because it does not affect the design directly.

@@ -30,7 +30,3 @@ The Reminder class has the method setupReminderLocation() which will allow remin
 
 **10.** 
 The application will have a clean user interface and be responsive. 
-
-
-
-
