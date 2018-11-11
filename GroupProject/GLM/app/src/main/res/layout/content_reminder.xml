@@ -40,7 +40,7 @@
 
     <EditText
         android:id="@+id/enterName"
-        android:layout_width="wrap_content"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="84dp"
         android:ems="5"
@@ -49,31 +49,86 @@
 
     <EditText
         android:id="@+id/enterType"
-        android:layout_width="wrap_content"
+        android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="84dp"
         android:ems="5"
         app:layout_constraintBottom_toBottomOf="@id/type"
         app:layout_constraintLeft_toLeftOf="parent" />
 
-    <Button
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
-        android:text="Time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="@id/name"
-        android:onClick="dateAndTime"/>
-
-    <Button
+    <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="240dp"
-        android:text="Date"
-        app:layout_constraintBottom_toBottomOf="@id/time"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:onClick="dateAndTime"/>
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="54dp"
+        android:text="Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="46dp"
+        android:text="Time:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="MMDDYYYY"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/enterType" />
+
+    <EditText
+        android:id="@+id/enterTime"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="HHMMam"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="1dp"
+        android:text="Please specify: am or pm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterTime" />
+
+
+    <!--<Button-->
+        <!--android:id="@+id/time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="268dp"-->
+        <!--android:text="Time"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/name"-->
+        <!--android:onClick="dateAndTime"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="240dp"-->
+        <!--android:text="Date"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/time"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:onClick="dateAndTime"/>-->
 
 </android.support.constraint.ConstraintLayout>

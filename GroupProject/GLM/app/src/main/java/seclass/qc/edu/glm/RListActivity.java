@@ -30,6 +30,9 @@ public class RListActivity extends AppCompatActivity {
     EditText rListName;
     public static int count;
     String childName;
+    String childDate;
+    String childTime;
+    String label;  // childName + childDate + childTime to show on the content_rlist.xml screen
     int currentGroupPosition;
     String titleStr;
 
@@ -150,10 +153,13 @@ public class RListActivity extends AppCompatActivity {
 
         if (resultCode == 1) {
 
-            if (data.hasExtra("name")) {
+            if (data.hasExtra("name") && data.hasExtra("date") && data.hasExtra("time")) {
 
                 childName = data.getExtras().getString("name");
-                listAdapter.setChild(childName, titleStr);
+                childDate = data.getExtras().getString("date");
+                childTime = data.getExtras().getString("time");
+                label = childName + ":  " + childDate.substring(0, 2) + "/" + childDate.substring(2, 4) + "/" + childDate.substring(4) + ", " + childTime.substring(0,2) + ":" + childTime.substring(2);
+                listAdapter.setChild(label, titleStr);
                 listAdapter.notifyDataSetChanged();
 
             }

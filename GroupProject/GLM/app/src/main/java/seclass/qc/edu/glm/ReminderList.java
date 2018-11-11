@@ -4,10 +4,16 @@ import java.util.*;
 
 public class ReminderList {
 
-    private LinkedList<Reminder> reminderList;
+//    private LinkedList<Reminder> reminderList;
 
     private String listName;
-    private LinkedList<String> group;
+//    private LinkedList<String> group;
+
+    public ReminderList() {}
+
+    public ReminderList(String name) {
+
+    }
 
     public String getName() {
         return listName;
@@ -18,7 +24,8 @@ public class ReminderList {
     }
 
     public void addReminder(Reminder r) {
-        reminderList.add(r);
+//        reminderList.add(r);
+
     }
 
     public void editReminder(Reminder r) {

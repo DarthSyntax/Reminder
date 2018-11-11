@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.*;
+
 public class ReminderActivity extends AppCompatActivity {
 
     public static int hour;
@@ -19,6 +22,18 @@ public class ReminderActivity extends AppCompatActivity {
     EditText getType;
     String name = "";
     String type = "";
+
+    EditText getDate;
+    EditText getTime;
+    String date;
+    String time;
+/*
+    Date date;
+    String formatDate = new SimpleDateFormat("MMddyyyy").format(date);
+    Date time;
+    String formatTime = new SimpleDateFormat("hhmmaa").format(time);
+*/
+
     Intent rListActivity;
 
     @Override
@@ -43,10 +58,18 @@ public class ReminderActivity extends AppCompatActivity {
         name = getName.getText().toString();
         getType = (EditText) findViewById(R.id.enterType);
         type = getType.getText().toString();
-        Reminder reminder = new Reminder(type, name);
+
+        getDate = (EditText) findViewById(R.id.enterDate);
+        date = getDate.getText().toString();
+        getTime = (EditText) findViewById(R.id.enterTime);
+        time = getTime.getText().toString();
+
+        Reminder reminder = new Reminder(type, name, date, time);
         rListActivity = new Intent(this, RListActivity.class);
         rListActivity.putExtra("name", name);
         rListActivity.putExtra("type", type);
+        rListActivity.putExtra("date", date);
+        rListActivity.putExtra("time", time);
 
         finish();
     }
