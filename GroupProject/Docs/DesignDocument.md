@@ -22,7 +22,6 @@ The application will run on Android using the latest API.
 
 ![Component Diagram](https://i.imgur.com/pIPTrA3.png)
 
-
 ### 2.2 Deployment Diagram
 
 ![Deployment Diagram](https://i.imgur.com/NBdutB9.png)
