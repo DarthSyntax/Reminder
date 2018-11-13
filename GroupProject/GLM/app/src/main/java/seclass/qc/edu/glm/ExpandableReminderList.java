@@ -50,6 +50,12 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
         listHashMap.remove(key);
     }
 
+    public void editGroup(String key, String newName, int position) {
+        List<String> l =  listHashMap.remove(key);
+        listDataHeader.set(position, newName);
+        listHashMap.put(newName, l);
+            }
+
     public void setChild(String name, String listName) {
         listHashMap.get(listName).add(name);
 

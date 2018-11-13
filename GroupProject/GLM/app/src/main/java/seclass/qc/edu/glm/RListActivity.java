@@ -1,8 +1,11 @@
 package seclass.qc.edu.glm;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
@@ -29,6 +32,8 @@ public class RListActivity extends AppCompatActivity {
     private HashMap<String,List<String>> listHash;
     EditText rListName;
     public static int count;
+    String currentListName;
+    String newListName = "";
     String childName;
     String childDate;
     String childTime;
@@ -121,7 +126,7 @@ public class RListActivity extends AppCompatActivity {
 
                 //Edit was selected from menu
             } else {
-                Toast.makeText(this, "No edit functionality yet for list"  , Toast.LENGTH_SHORT).show();
+                editList(titleStr);
 
             }
                 // this means a reminder was selected
@@ -198,5 +203,32 @@ public class RListActivity extends AppCompatActivity {
         rListName.setText("");
         count++;
 
+    }
+
+    public void editList(final String oldName) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Title");
+
+        final EditText name = new EditText(this);
+        name.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setTitle("Enter new list name");
+        builder.setView(name);
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                newListName = name.getText().toString();
+                listAdapter.editGroup(oldName, newListName, currentGroupPosition);
+                listAdapter.notifyDataSetChanged();
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
     }
 }
