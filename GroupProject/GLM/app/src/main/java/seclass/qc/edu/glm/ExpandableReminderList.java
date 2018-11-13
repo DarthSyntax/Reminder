@@ -16,7 +16,7 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
     private Context context;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listHashMap;
-    public static int currentGroupPosition;
+
 
     public ExpandableReminderList(Context context, List<String> listDataHeader, HashMap<String, List<String>> listHashMap) {
         this.context = context;
@@ -53,6 +53,10 @@ public class ExpandableReminderList extends BaseExpandableListAdapter {
     public void setChild(String name, String listName) {
         listHashMap.get(listName).add(name);
 
+    }
+
+    public void editChild(String newValue, int listPosition, int remPosition) {
+        listHashMap.get(listDataHeader.get(listPosition)).set(remPosition, newValue);
     }
 
     public void removeChild(String key, int listPosition, int remPosition) {

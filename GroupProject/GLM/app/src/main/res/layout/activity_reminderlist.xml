@@ -41,7 +41,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Reminder List Name"
+        android:hint="Enter Reminder List Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/addReminderListButton" />
 

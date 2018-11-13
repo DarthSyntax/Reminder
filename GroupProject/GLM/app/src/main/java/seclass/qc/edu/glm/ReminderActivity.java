@@ -68,9 +68,11 @@ public class ReminderActivity extends AppCompatActivity {
         rListActivity = new Intent(this, RListActivity.class);
         rListActivity.putExtra("name", name);
         rListActivity.putExtra("type", type);
-        rListActivity.putExtra("date", date);
-        rListActivity.putExtra("time", time);
 
+        if(date.trim().length() != 0 && time.trim().length() != 0) {
+            rListActivity.putExtra("date", date);
+            rListActivity.putExtra("time", time);
+        }
         finish();
     }
 

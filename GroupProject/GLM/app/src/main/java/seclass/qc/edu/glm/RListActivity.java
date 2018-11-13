@@ -34,7 +34,9 @@ public class RListActivity extends AppCompatActivity {
     String childTime;
     String label;  // childName + childDate + childTime to show on the content_rlist.xml screen
     int currentGroupPosition;
+    int currentChildPosition;
     String titleStr;
+    public static boolean edit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,11 +65,7 @@ public class RListActivity extends AppCompatActivity {
     //This dictates the menu shown when a long click is performed
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        //menu.setHeaderTitle("Context Menu");
 
-       // menu.add(0, v.getId(), 0, "Add");
-        //menu.add(1, v.getId(), 0, "Edit");
-        //menu.add(2, v.getId(), 0, "Delete");
         ExpandableListView.ExpandableListContextMenuInfo info = (ExpandableListView.ExpandableListContextMenuInfo) menuInfo;
         int type = ExpandableListView.getPackedPositionType(info.packedPosition);
         int groupPosition = ExpandableListView.getPackedPositionGroup(info.packedPosition);
@@ -104,7 +102,7 @@ public class RListActivity extends AppCompatActivity {
         int groupPosition = ExpandableListView.getPackedPositionGroup(info.packedPosition);
         int childPosition = ExpandableListView.getPackedPositionChild(info.packedPosition);
         currentGroupPosition = groupPosition;
-        ExpandableReminderList.currentGroupPosition = groupPosition;
+        currentChildPosition = childPosition;
         titleStr = (String) listAdapter.getGroup(groupPosition);
 
         //This means a list was selected
@@ -131,7 +129,9 @@ public class RListActivity extends AppCompatActivity {
 
             //Edit was selected
             if(item.getGroupId() == 0) {
-                Toast.makeText(this, "No edit functionality yet for child"  , Toast.LENGTH_SHORT).show();
+                edit = true;
+                Intent attrIntent = new Intent(this, ReminderActivity.class);
+                startActivityForResult(attrIntent, 1);
 
                 //Delete was selected
             } else {
@@ -154,15 +154,39 @@ public class RListActivity extends AppCompatActivity {
         if (resultCode == 1) {
 
             if (data.hasExtra("name") && data.hasExtra("date") && data.hasExtra("time")) {
-
                 childName = data.getExtras().getString("name");
                 childDate = data.getExtras().getString("date");
                 childTime = data.getExtras().getString("time");
-                label = childName + ":  " + childDate.substring(0, 2) + "/" + childDate.substring(2, 4) + "/" + childDate.substring(4) + ", " + childTime.substring(0,2) + ":" + childTime.substring(2);
-                listAdapter.setChild(label, titleStr);
-                listAdapter.notifyDataSetChanged();
+                label = childName + ":  " + childDate.substring(0, 2) + "/" + childDate.substring(2, 4) + "/" + childDate.substring(4) + ", " + childTime.substring(0, 2) + ":" + childTime.substring(2);
+
+                if(!edit) {
+                    listAdapter.setChild(label, titleStr);
+                    listAdapter.notifyDataSetChanged();
+                } else {
+                    listAdapter.editChild(label, currentGroupPosition, currentChildPosition);
+                    listAdapter.notifyDataSetChanged();
+                    edit = false;
+
+                }
+
+
+            } else if(data.hasExtra("name")) {
+                childName = data.getExtras().getString("name");
+                label = childName;
+
+                if(!edit) {
+                    listAdapter.setChild(label, titleStr);
+                    listAdapter.notifyDataSetChanged();
+                } else {
+                    listAdapter.editChild(label, currentGroupPosition, currentChildPosition);
+                    listAdapter.notifyDataSetChanged();
+                    edit = false;
+
+                }
+
 
             }
+
         }
     }
 
