@@ -1,4 +1,4 @@
-package seclass.qc.edu.glm;
+/*package seclass.qc.edu.glm;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -160,4 +160,4 @@ public class Database extends SQLiteOpenHelper {
                 new String[]{String.valueOf(reminder.getID())});
         db.close();
     }
-}
+}*/
