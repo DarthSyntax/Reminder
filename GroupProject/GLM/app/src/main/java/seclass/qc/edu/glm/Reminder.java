@@ -37,8 +37,4 @@ public class Reminder {
         name = n;
     }
 
-    public static void edit(Reminder r) {
-
-    }
-
 }
