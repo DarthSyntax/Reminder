@@ -1,11 +1,11 @@
 # 370Fall18Team1
 
+## ReminderManager Application
+
 ![Reminder App](https://i.imgur.com/xUlB13w.jpg)
 
 ![User Video](https://i.imgur.com/z78CTpM.gif)
 
-
-## ReminderManager Application
 
 Upon opening the application, users are prompted to enter a username and a password to login.  
 The following screen displays the user's reminder lists. Users create a list by entering a name for the list and pressing the `Add List` button, and users can add reminders to each list from there.  
