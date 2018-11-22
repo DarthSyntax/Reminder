@@ -29,7 +29,7 @@ public class ReminderList {
     }
 
     public void editReminder(Reminder r) {
-        Reminder.edit(r);
+      
     }
 
 }
